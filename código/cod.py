@@ -26,17 +26,17 @@ while True:
                 
         if values['lista'] == 'Centímetros (cm)':
             if values['lista2'] == 'Metros (m)':
-                window['troca'].update(float(values["input"])/100)
+                window['troca'].update(float(values["input"])/0.01)
             if values['lista2'] == 'Centímetros (cm)':
                 window['troca'].update('Por favor, troque um dos elementos selecionados')
             if values['lista2'] == 'Milímetros (mm)':
-                window['troca'].update(float(values["input"])/1000)
+                window['troca'].update(float(values["input"])*10)
       
         if values['lista'] == 'Milímetros (mm)':
             if values['lista2'] == 'Metros (m)':
                 window['troca'].update(float(values["input"])*0.001)
             if values['lista2'] == 'Centímetros (cm)':
-                window['troca'].update(float(values["input"])*0.0001)
+                window['troca'].update(float(values["input"])*0.1)
             if values['lista2'] == 'Milímetros (mm)':
                 window['troca'].update('Por favor, troque um dos elementos selecionados')
                 
